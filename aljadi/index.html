@@ -50,13 +50,13 @@
     </div>
     <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12 d-flex justify-content-center">
-            <img id="img2" src="img.jpg" alt="The img2" class="img-thumbnail img mt-2 selected" onclick="changeImg(this, 2)">
+            <img id="img2" src="img.jpeg" alt="The img2" class="img-thumbnail img mt-2 selected" onclick="changeImg(this, 2)">
         </div>
     </div>
 
 
     <canvas id="myCanvas" width="720" height="1280" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
-    <canvas id="myCanvas2" width="10218" height="19073" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
+    <canvas id="myCanvas2" width="857" height="1600" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
     <canvas id="myCanvas3" width="1280" height="908" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
     </canvas>
 
@@ -84,13 +84,13 @@
             var img = document.getElementById("img2");
             ctx2.drawImage(img, 0, 0);
 
-            ctx2.font = "400px Adir";
+            ctx2.font = "40px Adir";
             ctx2.fillStyle = '#e8ae23';
             ctx2.textAlign = 'center'
             console.log(name);
             download_img2 = function(el) {
                 name = document.getElementById('name').value
-                ctx2.fillText(name + "", 5009, 14000);
+                ctx2.fillText(name + "", 424, 1189);
                 document.getElementById('download').download = name
 
                 var image = canvas2.toDataURL("image/jpg");
